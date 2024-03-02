@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <title>Mi Spotify - Reproductor mp3</title>
+  <link rel="icon" href="./imagenes/download.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+    <audio></audio>
+
+    <h1>Mi Spotify</h1>
+
+    <div id="current_time">0:00</div>
+
+    <div class="buttons">
+      <button id="prev">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button id="play">
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="next">
+        <i class="fas fa-forward"></i>
+      </button>
+    </div>
+
+    <div id="current_audio">Current Song: <span id="current_song"></span></div>
+
+    <div class="progress_container">
+      <div id="progress"></div>
+    </div>
+
+    <div class="volume-container">
+      <button id="volume-down">
+        <i class="fas fa-volume-down"></i>
+      </button>
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+      <button id="volume-up">
+        <i class="fas fa-volume-up"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="artist-name">
+    <p>El Balam</p>
+  </div>
+
+  <script type="module" src="./src/controllers/index.js"></script>
+
+</body>
+</html>
